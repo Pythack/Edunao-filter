@@ -43,6 +43,53 @@ function getOngoingEvent() {
   });
 }
 
+
+// async function refreshICal() {
+//   try {
+//     const result = await browser.storage.local.get('ICALURL');
+//     const url = "https://corsproxy.io/?" + result.ICALURL;
+
+//     console.log(url);
+    
+
+//     // Fetch the .ics file from the given URL
+//     const response = await fetch(url);
+//     const icalText = await response.text();
+    
+//     // Parse the .ics file using ical.js
+//     const jcalData = ICAL.parse(icalText);
+//     const comp = new ICAL.Component(jcalData);
+//     const vevents = comp.getAllSubcomponents('vevent');
+  
+//     // Prepare an array to store the optimized event details
+//     const eventsData = [];
+  
+//     // Extract and store event details
+//     vevents.forEach(event => {
+//     const summary = event.getFirstPropertyValue('summary');
+//     const start = event.getFirstPropertyValue('dtstart');
+//     const end = event.getFirstPropertyValue('dtend');
+    
+//     const eventData = {
+//       summary,
+//       start: start.toString(),  // Store dates as ISO strings
+//       end: end.toString()
+//     };
+    
+//     eventsData.push(eventData); // Push event data into array
+//     });
+  
+//     // Save the optimized event data to local storage
+//     browser.storage.local.set({ calendarEvents: eventsData }, function() {
+//     console.log('Events have been saved to local storage.');
+//     });
+  
+//   } catch (error) {
+//     console.error('Error fetching or parsing iCal file:', error);
+//   }
+// };
+
+
 browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {// When a tab is updated
   var taburl = new URL(tab.url);
   if (taburl.host == "centralesupelec.edunao.com" && taburl.pathname == "/") {
@@ -67,16 +114,22 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {// When a tab is
             jsonDict[key] = child;
             child.remove();
           });
-  
           
-  
+          
+          
           if (jsonDict.hasOwnProperty(ongoingEvent)) { // If the ongoingEventName exists in jsonDict
+            // jsonDict[ongoingEvent].firstChild.setAttribute('style', 'border: 1px solid #007ef3 !important');
+            jsonDict[ongoingEvent].firstChild.style.border = '2px solid #007ef3';
+            jsonDict[ongoingEvent].firstChild.style.boxShadow = '0 0 10px #007ef3';
             parentElement.appendChild(jsonDict[ongoingEvent]); // Append the corresponding element to parentElement
             delete jsonDict[ongoingEvent]; // Remove the ongoingEventName
           }
-  
+          
           keys.forEach((key) => {
             if (jsonDict.hasOwnProperty(key)) { // If the key exists in jsonDict
+              // jsonDict[key].firstChild.setAttribute('style', 'border: 1px solid #910035 !important');
+              jsonDict[key].firstChild.style.border = '2px solid #910035';
+              jsonDict[key].firstChild.style.boxShadow = '0 0 10px #910035';
               parentElement.appendChild(jsonDict[key]); // Append the corresponding element to parentElement
               delete jsonDict[key]; // Remove the key from jsonDict
             }
