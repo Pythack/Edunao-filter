@@ -1,0 +1,8 @@
+{
+  "appName": {
+    "message": "Edunao filter"
+  },
+  "appDesc": {
+    "message": "Reorder courses based on the current sequence."
+  }
+}
