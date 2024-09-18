@@ -4,5 +4,11 @@
   },
   "appDesc": {
     "message": "Réorganisez les cours en fonction de la séquence actuelle."
+  },
+  "popupICALURL": {
+    "message": "URL ICAL"
+  },
+  "popupSave": {
+    "message": "Enregistrer l'URL"
   }
 }

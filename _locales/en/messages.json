@@ -4,5 +4,11 @@
   },
   "appDesc": {
     "message": "Reorder courses based on the current sequence."
+  },
+  "popupICALURL": {
+    "message": "ICAL URL"
+  },
+  "popupSave": {
+    "message": "Save URL"
   }
 }
