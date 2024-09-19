@@ -102,6 +102,9 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {// When a tab is
           if (parentElement.classList.contains("reordered")) {
             return;
           }
+
+          document.querySelector(".frontpage-block").remove();
+
           const children = Array.from(parentElement.children);
           const jsonDict = {};
   
@@ -119,8 +122,8 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {// When a tab is
           
           if (jsonDict.hasOwnProperty(ongoingEvent)) { // If the ongoingEventName exists in jsonDict
             // jsonDict[ongoingEvent].firstChild.setAttribute('style', 'border: 1px solid #007ef3 !important');
-            jsonDict[ongoingEvent].firstChild.style.border = '2px solid #007ef3';
-            jsonDict[ongoingEvent].firstChild.style.boxShadow = '0 0 10px #007ef3';
+            // jsonDict[ongoingEvent].firstChild.style.border = '1px solid #007ef3';
+            jsonDict[ongoingEvent].firstChild.style.boxShadow = '0 0 20px #007ef3';
             parentElement.appendChild(jsonDict[ongoingEvent]); // Append the corresponding element to parentElement
             delete jsonDict[ongoingEvent]; // Remove the ongoingEventName
           }
@@ -128,8 +131,8 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {// When a tab is
           keys.forEach((key) => {
             if (jsonDict.hasOwnProperty(key)) { // If the key exists in jsonDict
               // jsonDict[key].firstChild.setAttribute('style', 'border: 1px solid #910035 !important');
-              jsonDict[key].firstChild.style.border = '2px solid #910035';
-              jsonDict[key].firstChild.style.boxShadow = '0 0 10px #910035';
+              // jsonDict[key].firstChild.style.border = '1px solid #910035';
+              jsonDict[key].firstChild.style.boxShadow = '0 0 20px #910035';
               parentElement.appendChild(jsonDict[key]); // Append the corresponding element to parentElement
               delete jsonDict[key]; // Remove the key from jsonDict
             }
