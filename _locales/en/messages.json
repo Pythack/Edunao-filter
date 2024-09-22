@@ -10,5 +10,14 @@
   },
   "popupSave": {
     "message": "Save URL"
+  },
+  "icalexplain1": {
+    "message": "Why add an iCal?"
+  },
+  "icalexplain2": {
+    "message": "By adding your iCal calendar URL, the extension can display your current course based on your schedule!"
+  },
+  "popupICALURLPLACEHOLDER": {
+    "message": "Enter iCal URL here"
   }
 }

@@ -9,18 +9,20 @@
     <h1 id="title">__MSG_appName__</h1>
     <div id="formdiv">
       <div id="formdivurl" class="formdivel">
-        <label>__MSG_popupICALURL__: </label><br/>
-        <input type="text" placeholder="" id="add_url">
+        <label for="add_url">__MSG_popupICALURL__: </label><br/>
+        <input type="text" placeholder="__MSG_popupICALURLPLACEHOLDER__" id="add_url">
       </div>
       <div id="formdivprv" class="formdivel">
         <button type="submit" id="save_btn">__MSG_popupSave__</button>
       </div>
     </div>
-    <!-- <div id="promotionaldiv">
-      <h2>Rate this extension</h2>
-      <p>If you enjoy this extension, please don't hesitate to rate it!👍</p>
-    </div> -->
+
+    <!-- Explication de l'iCal -->
+    <div id="icalExplanation">
+      <h3>__MSG_icalexplain1__</h3>
+      <p>__MSG_icalexplain2__</p>
+    </div>
+
+    <script type="text/javascript" src="./popup.js"></script>
   </body>
-  <script type="text/javascript" src="./popup.js"></script>
-  </html>
-  
+</html>
