@@ -5,7 +5,7 @@ if (typeof browser === "undefined") {
   var browser_action = browser.browserAction
 }
 const keys = ['linear algebra', 'electromagnetism and conduction', 'introduction to automation and control', 'structure of corporation']; // Define a list of keys
-
+const alternativeKeys = ['analysis 1', 'introduction to classical mechanics', 'introduction to programming', 'general chemistry', 'philosophy, ethics and critical thinking']; // Définissez votre liste alternative ici
 
 function onError(error) { // Define onError function
     console.log(`Error:${error}`);
@@ -43,61 +43,14 @@ function getOngoingEvent() {
   });
 }
 
-
-// async function refreshICal() {
-//   try {
-//     const result = await browser.storage.local.get('ICALURL');
-//     const url = "https://corsproxy.io/?" + result.ICALURL;
-
-//     console.log(url);
-    
-
-//     // Fetch the .ics file from the given URL
-//     const response = await fetch(url);
-//     const icalText = await response.text();
-    
-//     // Parse the .ics file using ical.js
-//     const jcalData = ICAL.parse(icalText);
-//     const comp = new ICAL.Component(jcalData);
-//     const vevents = comp.getAllSubcomponents('vevent');
-  
-//     // Prepare an array to store the optimized event details
-//     const eventsData = [];
-  
-//     // Extract and store event details
-//     vevents.forEach(event => {
-//     const summary = event.getFirstPropertyValue('summary');
-//     const start = event.getFirstPropertyValue('dtstart');
-//     const end = event.getFirstPropertyValue('dtend');
-    
-//     const eventData = {
-//       summary,
-//       start: start.toString(),  // Store dates as ISO strings
-//       end: end.toString()
-//     };
-    
-//     eventsData.push(eventData); // Push event data into array
-//     });
-  
-//     // Save the optimized event data to local storage
-//     browser.storage.local.set({ calendarEvents: eventsData }, function() {
-//     console.log('Events have been saved to local storage.');
-//     });
-  
-//   } catch (error) {
-//     console.error('Error fetching or parsing iCal file:', error);
-//   }
-// };
-
-
 browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {// When a tab is updated
   var taburl = new URL(tab.url);
   if (taburl.host == "centralesupelec.edunao.com" && taburl.pathname == "/") {
     getOngoingEvent().then(ongoingEventName => {
       browser.scripting.executeScript({
         target: { tabId: tabId },
-        args: [ongoingEventName, keys],
-        function: (ongoingEvent, keys) => {
+        args: [ongoingEventName, keys, alternativeKeys],
+        function: (ongoingEvent, keys, alternativeKeys) => {
           const parentElement = document.querySelector(".courses");
           if (parentElement.classList.contains("reordered")) {
             return;
@@ -108,8 +61,6 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {// When a tab is
           const children = Array.from(parentElement.children);
           const jsonDict = {};
   
-          // const allcourses = children[-1];
-  
           children.forEach((child, index) => {
             if (index === children.length - 1) {child.remove();return;}; // Skip the last element
             const key = child.firstChild.firstChild.firstChild.textContent.split(' -')[0].trim().toLowerCase();
@@ -118,11 +69,8 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {// When a tab is
             child.remove();
           });
           
-          
-          
+          // Place the ongoing event first if it exists
           if (jsonDict.hasOwnProperty(ongoingEvent)) { // If the ongoingEventName exists in jsonDict
-            // jsonDict[ongoingEvent].firstChild.setAttribute('style', 'border: 1px solid #007ef3 !important');
-            // jsonDict[ongoingEvent].firstChild.style.border = '1px solid #007ef3';
             jsonDict[ongoingEvent].firstChild.style.boxShadow = '0 0 20px #007ef3';
             parentElement.appendChild(jsonDict[ongoingEvent]); // Append the corresponding element to parentElement
             delete jsonDict[ongoingEvent]; // Remove the ongoingEventName
@@ -130,21 +78,28 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {// When a tab is
           
           keys.forEach((key) => {
             if (jsonDict.hasOwnProperty(key)) { // If the key exists in jsonDict
-              // jsonDict[key].firstChild.setAttribute('style', 'border: 1px solid #910035 !important');
-              // jsonDict[key].firstChild.style.border = '1px solid #910035';
               jsonDict[key].firstChild.style.boxShadow = '0 0 20px #910035';
               parentElement.appendChild(jsonDict[key]); // Append the corresponding element to parentElement
               delete jsonDict[key]; // Remove the key from jsonDict
             }
           });
+
+          // Vérifiez si "linear algebra" est présent
+          if (!jsonDict.hasOwnProperty('linear algebra')) {
+            alternativeKeys.forEach((key) => {
+              if (jsonDict.hasOwnProperty(key)) {
+                jsonDict[key].firstChild.style.boxShadow = '0 0 20px #910035';
+                parentElement.appendChild(jsonDict[key]);
+                delete jsonDict[key];
+              }
+            });
+          }
   
           // Add the remaining elements to parentElement
           Object.values(jsonDict).forEach((element) => {
             parentElement.appendChild(element);
           });
           
-          // parentElement.appendChild(allcourses);
-  
           parentElement.classList.add("reordered");
   
           console.log(jsonDict);
@@ -152,7 +107,5 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {// When a tab is
         }
       });
     }, onError);
-    
   }
-  
 });
