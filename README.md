@@ -7,7 +7,7 @@ Filtre Edunao (ou **Edunao Filter**) est une extension open source pour Safari e
 
 - **Personnalisation du contenu** : Modifie l'affichage du site selon vos besoins.
 - **Intégration iCal** : Ajoutez un lien iCal pour voir vos événements et cours actuels.
-- **Compatibilité multi-plateforme** : Disponible pour Safari, Chrome et Firefox.
+- **Compatibilité multi-plateforme** : Disponible pour Safari et Chrome.
 - **Entièrement open source** : Le code est disponible pour modification, personnalisation et contribution.
 
 ## Installation
