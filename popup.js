@@ -29,7 +29,7 @@ async function fetchAndSaveICal(url) {
   
 	  // Extract and store event details
 	  vevents.forEach(event => {
-		const summary = event.getFirstPropertyValue('summary');
+		const summary = event.getFirstPropertyValue('summary'); // This is the event title
 		const start = event.getFirstPropertyValue('dtstart');
 		const end = event.getFirstPropertyValue('dtend');
 		
@@ -61,10 +61,10 @@ function saveOptions(e) { // Function called when user clicks on "Save" button
 	browser.storage.local.set({ ICALURL: url }, function() {
 		console.log('URL has been saved to local storage.');
 	});
-	fetchAndSaveICal("https://corsproxy.io/?" + url);
+	fetchAndSaveICal("https://corsproxy.io/?" + url); // Fetch and save the iCal file using a proxy to avoid CORS issues
 };
 
-function localizeHtmlPage()
+function localizeHtmlPage() // This is used to translate the popup.html page
 {
     //Localize by replacing __MSG_***__ meta tags
     var objects = document.getElementsByTagName('html');
@@ -117,6 +117,6 @@ function checkURLHost(event) {
 localizeHtmlPage();
 
 // Set event listeners
-document.addEventListener("DOMContentLoaded", restoreOptions);
-document.querySelector("#save_btn").addEventListener("click", saveOptions);
-document.querySelector("#add_url").addEventListener("input", checkURLHost);
+document.addEventListener("DOMContentLoaded", restoreOptions); // When the popup loads
+document.querySelector("#save_btn").addEventListener("click", saveOptions); // When the user clicks on "Save"
+document.querySelector("#add_url").addEventListener("input", checkURLHost); // When the user types in the input field
