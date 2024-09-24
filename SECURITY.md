@@ -15,7 +15,7 @@ Si vous découvrez une faille de sécurité dans **Filtre Edunao**, merci de nou
 
 Voici comment procéder :
 
-1. **Ne créez pas de ticket public**. Contactez-nous directement à l'adresse e-mail suivante : **[Charles@anotex.tech]**.
+1. **Ne créez pas de ticket public**. Contactez-nous directement à l'adresse e-mail suivante : **[it@bdbcs.fr]**.
 2. Donnez un maximum de détails sur la vulnérabilité, notamment :
    - Une description complète du problème.
    - Les étapes pour reproduire la faille.
