@@ -11,6 +11,15 @@
   "popupSave": {
     "message": "Save URL"
   },
+  "popupSaveSuccess": {
+    "message": "Successfully saved"
+  },
+  "popupFetchError": {
+    "message": "Error fetching URL"
+  },
+  "popupInvalidURL": {
+    "message": "Invalid URL"
+  },
   "icalexplain1": {
     "message": "Why add an iCal?"
   },

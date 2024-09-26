@@ -12,6 +12,29 @@ function onError(error) {
 	console.log(`Error:${error}`);
 }
 
+function saveSuccess() {
+	document.querySelector("#save_btn").style.backgroundColor = "#00df61";
+	document.querySelector("#save_btn").textContent = browser.i18n.getMessage("popupSaveSuccess");
+	setTimeout(() => {
+		browser.tabs.query({ url: "https://centralesupelec.edunao.com/" }, function(tabs) {
+			tabs.forEach(function(tab) {
+				browser.tabs.reload(tab.id);
+			});
+		});
+		window.close();
+	}, 700);
+	
+}
+
+function saveError(message) {
+	document.querySelector("#save_btn").style.backgroundColor = "#df0000";
+		document.querySelector("#save_btn").textContent = browser.i18n.getMessage(message);
+		setTimeout(() => {
+			document.querySelector("#save_btn").style.backgroundColor = "#0060df";
+			document.querySelector("#save_btn").textContent = browser.i18n.getMessage("popupSave");
+		}, 1500);
+}
+
 
 async function fetchAndSaveICal(url) {
 	try {
@@ -45,16 +68,19 @@ async function fetchAndSaveICal(url) {
 	  // Save the optimized event data to local storage
 	  browser.storage.local.set({ calendarEvents: eventsData }, function() {
 		console.log('Events have been saved to local storage.');
+		saveSuccess();
 	  });
   
 	} catch (error) {
-	  console.error('Error fetching or parsing iCal file:', error);
+	  console.log('Error fetching or parsing iCal file');
+	  saveError("popupFetchError");
 	}
 }  
 
 function saveOptions(e) { // Function called when user clicks on "Save" button
 	e.preventDefault();
 	if (document.querySelector("#add_url").checkValidity() === false || document.querySelector("#add_url").value === "") {
+		saveError("popupInvalidURL");
 		return;
 	}
 	var url = document.querySelector("#add_url").value;
