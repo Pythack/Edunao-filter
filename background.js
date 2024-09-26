@@ -77,14 +77,6 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => { // When a tab i
             delete jsonDict[ongoingEvent]; // Remove the ongoingEventName
           }
           
-          keys.forEach((key) => {
-            if (jsonDict.hasOwnProperty(key)) { // If the key exists in jsonDict
-              jsonDict[key].firstChild.style.boxShadow = '0 0 20px #910035'; // Add a red shadow to the element
-              parentElement.appendChild(jsonDict[key]); // Append the corresponding element to parentElement
-              delete jsonDict[key]; // Remove the key from jsonDict
-            }
-          });
-
           if (!jsonDict.hasOwnProperty('linear algebra')) { // If linear algebra is not in the list so the use is 1A then put the 1A courses on top
             alternativeKeys.forEach((key) => {
               if (jsonDict.hasOwnProperty(key)) {
@@ -93,7 +85,18 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => { // When a tab i
                 delete jsonDict[key];
               }
             });
+          } else {
+            keys.forEach((key) => {
+              if (jsonDict.hasOwnProperty(key)) { // If the key exists in jsonDict
+                jsonDict[key].firstChild.style.boxShadow = '0 0 20px #910035'; // Add a red shadow to the element
+                parentElement.appendChild(jsonDict[key]); // Append the corresponding element to parentElement
+                delete jsonDict[key]; // Remove the key from jsonDict
+              }
+            });
           }
+
+          
+
   
           // Add the remaining elements to parentElement
           Object.values(jsonDict).forEach((element) => {
