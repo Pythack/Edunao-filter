@@ -11,6 +11,15 @@
   "popupSave": {
     "message": "Enregistrer l'URL"
   },
+  "popupSaveSuccess": {
+    "message": "Enregistré avec succès"
+  },
+  "popupFetchError": {
+    "message": "Erreur de récupération de l'URL"
+  },
+  "popupInvalidURL": {
+    "message": "URL invalide"
+  },
   "icalexplain1": {
     "message": "Pourquoi ajouter un iCal ?"
   },
