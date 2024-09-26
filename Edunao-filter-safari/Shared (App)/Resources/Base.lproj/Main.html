@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="../Style.css">
+    <script src="../Script.js" defer></script>
+
+    <title>Edunao Filter Extension</title>
+</head>
+<body>
+    <div class="container">
+        <img src="../Icon.png" width="128" height="128" alt="Edunao filter Icon" class="icon">
+        <h1 id="title">Edunao Filter Extension</h1>
+
+        <!-- Instructions pour iOS -->
+        <div class="platform-ios">
+            <p id="ios-instructions"></p> <!-- Le texte sera injecté par JavaScript -->
+        </div>
+
+        <!-- Instructions pour macOS -->
+        <div class="platform-mac">
+            <p id="state-unknown" class="state-unknown"></p>
+            <p id="state-on" class="state-on"></p>
+            <p id="state-off" class="state-off"></p>
+            <button id="open-preferences" class="open-preferences"></button>
+        </div>
+    </div>
+</body>
+</html>

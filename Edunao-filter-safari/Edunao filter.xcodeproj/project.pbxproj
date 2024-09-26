@@ -1,0 +1,1016 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB2A498F2CA09F4700A68664 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A498E2CA09F4700A68664 /* AppDelegate.swift */; };
+		FB2A49912CA09F4700A68664 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A49902CA09F4700A68664 /* SceneDelegate.swift */; };
+		FB2A49942CA09F4700A68664 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49922CA09F4700A68664 /* LaunchScreen.storyboard */; };
+		FB2A49972CA09F4700A68664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49952CA09F4700A68664 /* Main.storyboard */; };
+		FB2A49A02CA09F4700A68664 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A499F2CA09F4700A68664 /* AppDelegate.swift */; };
+		FB2A49A32CA09F4700A68664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49A12CA09F4700A68664 /* Main.storyboard */; };
+		FB2A49AB2CA09F4700A68664 /* Edunao filter Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FB2A49AA2CA09F4700A68664 /* Edunao filter Extension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FB2A49B52CA09F4700A68664 /* Edunao filter Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FB2A49B42CA09F4700A68664 /* Edunao filter Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FB2A49BB2CA09F4700A68664 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = FB2A497E2CA09F4600A68664 /* Main.html */; };
+		FB2A49BC2CA09F4700A68664 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = FB2A497E2CA09F4600A68664 /* Main.html */; };
+		FB2A49BD2CA09F4700A68664 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49802CA09F4600A68664 /* Icon.png */; };
+		FB2A49BE2CA09F4700A68664 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49802CA09F4600A68664 /* Icon.png */; };
+		FB2A49BF2CA09F4700A68664 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49812CA09F4600A68664 /* Style.css */; };
+		FB2A49C02CA09F4700A68664 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49812CA09F4600A68664 /* Style.css */; };
+		FB2A49C12CA09F4700A68664 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49822CA09F4600A68664 /* Script.js */; };
+		FB2A49C22CA09F4700A68664 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49822CA09F4600A68664 /* Script.js */; };
+		FB2A49C32CA09F4700A68664 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A49832CA09F4600A68664 /* ViewController.swift */; };
+		FB2A49C42CA09F4700A68664 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A49832CA09F4600A68664 /* ViewController.swift */; };
+		FB2A49C52CA09F4700A68664 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49842CA09F4700A68664 /* Assets.xcassets */; };
+		FB2A49C62CA09F4700A68664 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49842CA09F4700A68664 /* Assets.xcassets */; };
+		FB2A49C72CA09F4700A68664 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A49862CA09F4700A68664 /* SafariWebExtensionHandler.swift */; };
+		FB2A49C82CA09F4700A68664 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A49862CA09F4700A68664 /* SafariWebExtensionHandler.swift */; };
+		FB2A49E32CA09F4700A68664 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49DA2CA09F4700A68664 /* popup.js */; };
+		FB2A49E42CA09F4700A68664 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49DB2CA09F4700A68664 /* LICENSE */; };
+		FB2A49E52CA09F4700A68664 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49DC2CA09F4700A68664 /* background.js */; };
+		FB2A49E62CA09F4700A68664 /* images in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49DD2CA09F4700A68664 /* images */; };
+		FB2A49E72CA09F4700A68664 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49DE2CA09F4700A68664 /* popup.html */; };
+		FB2A49E82CA09F4700A68664 /* ical.min.js in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49DF2CA09F4700A68664 /* ical.min.js */; };
+		FB2A49E92CA09F4700A68664 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49E02CA09F4700A68664 /* manifest.json */; };
+		FB2A49EA2CA09F4700A68664 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49E12CA09F4700A68664 /* popup.css */; };
+		FB2A49EB2CA09F4700A68664 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49E22CA09F4700A68664 /* _locales */; };
+		FB2A49EC2CA09F4700A68664 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49DA2CA09F4700A68664 /* popup.js */; };
+		FB2A49ED2CA09F4700A68664 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49DB2CA09F4700A68664 /* LICENSE */; };
+		FB2A49EE2CA09F4700A68664 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49DC2CA09F4700A68664 /* background.js */; };
+		FB2A49EF2CA09F4700A68664 /* images in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49DD2CA09F4700A68664 /* images */; };
+		FB2A49F02CA09F4700A68664 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49DE2CA09F4700A68664 /* popup.html */; };
+		FB2A49F12CA09F4700A68664 /* ical.min.js in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49DF2CA09F4700A68664 /* ical.min.js */; };
+		FB2A49F22CA09F4700A68664 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49E02CA09F4700A68664 /* manifest.json */; };
+		FB2A49F32CA09F4700A68664 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49E12CA09F4700A68664 /* popup.css */; };
+		FB2A49F42CA09F4700A68664 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = FB2A49E22CA09F4700A68664 /* _locales */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB2A49AC2CA09F4700A68664 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB2A49782CA09F4600A68664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB2A49A92CA09F4700A68664;
+			remoteInfo = "Edunao filter Extension (iOS)";
+		};
+		FB2A49B62CA09F4700A68664 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB2A49782CA09F4600A68664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB2A49B32CA09F4700A68664;
+			remoteInfo = "Edunao filter Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB2A49CE2CA09F4700A68664 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FB2A49AB2CA09F4700A68664 /* Edunao filter Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB2A49D52CA09F4700A68664 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FB2A49B52CA09F4700A68664 /* Edunao filter Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FB2A497F2CA09F4600A68664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		FB2A49802CA09F4600A68664 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		FB2A49812CA09F4600A68664 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		FB2A49822CA09F4600A68664 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		FB2A49832CA09F4600A68664 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB2A49842CA09F4700A68664 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB2A49862CA09F4700A68664 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		FB2A498B2CA09F4700A68664 /* Edunao filter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Edunao filter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB2A498E2CA09F4700A68664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB2A49902CA09F4700A68664 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FB2A49932CA09F4700A68664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB2A49962CA09F4700A68664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB2A49982CA09F4700A68664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB2A499D2CA09F4700A68664 /* Edunao filter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Edunao filter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB2A499F2CA09F4700A68664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB2A49A22CA09F4700A68664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB2A49A42CA09F4700A68664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB2A49A52CA09F4700A68664 /* Edunao filter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Edunao filter.entitlements"; sourceTree = "<group>"; };
+		FB2A49AA2CA09F4700A68664 /* Edunao filter Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Edunao filter Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB2A49AF2CA09F4700A68664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB2A49B42CA09F4700A68664 /* Edunao filter Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Edunao filter Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB2A49B92CA09F4700A68664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB2A49BA2CA09F4700A68664 /* Edunao filter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Edunao filter.entitlements"; sourceTree = "<group>"; };
+		FB2A49DA2CA09F4700A68664 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = "../../../Edunao-Filter-noe/popup.js"; sourceTree = "<group>"; };
+		FB2A49DB2CA09F4700A68664 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = "../../../Edunao-Filter-noe/LICENSE"; sourceTree = "<group>"; };
+		FB2A49DC2CA09F4700A68664 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = "../../../Edunao-Filter-noe/background.js"; sourceTree = "<group>"; };
+		FB2A49DD2CA09F4700A68664 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = "../../../Edunao-Filter-noe/images"; sourceTree = "<group>"; };
+		FB2A49DE2CA09F4700A68664 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = "../../../Edunao-Filter-noe/popup.html"; sourceTree = "<group>"; };
+		FB2A49DF2CA09F4700A68664 /* ical.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = ical.min.js; path = "../../../Edunao-Filter-noe/ical.min.js"; sourceTree = "<group>"; };
+		FB2A49E02CA09F4700A68664 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = "../../../Edunao-Filter-noe/manifest.json"; sourceTree = "<group>"; };
+		FB2A49E12CA09F4700A68664 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = "../../../Edunao-Filter-noe/popup.css"; sourceTree = "<group>"; };
+		FB2A49E22CA09F4700A68664 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = "../../../Edunao-Filter-noe/_locales"; sourceTree = "<group>"; };
+		FB977F122CA0A11A00A67842 /* Edunao filter (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Edunao filter (iOS).entitlements"; sourceTree = "<group>"; };
+		FB977F132CA0A11A00A67842 /* Edunao filter Extension (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Edunao filter Extension (iOS).entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB2A49882CA09F4700A68664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB2A499A2CA09F4700A68664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB2A49A72CA09F4700A68664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB2A49B12CA09F4700A68664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB2A49772CA09F4600A68664 = {
+			isa = PBXGroup;
+			children = (
+				FB977F132CA0A11A00A67842 /* Edunao filter Extension (iOS).entitlements */,
+				FB977F122CA0A11A00A67842 /* Edunao filter (iOS).entitlements */,
+				FB2A497C2CA09F4600A68664 /* Shared (App) */,
+				FB2A49852CA09F4700A68664 /* Shared (Extension) */,
+				FB2A498D2CA09F4700A68664 /* iOS (App) */,
+				FB2A499E2CA09F4700A68664 /* macOS (App) */,
+				FB2A49AE2CA09F4700A68664 /* iOS (Extension) */,
+				FB2A49B82CA09F4700A68664 /* macOS (Extension) */,
+				FB2A498C2CA09F4700A68664 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB2A497C2CA09F4600A68664 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				FB2A49832CA09F4600A68664 /* ViewController.swift */,
+				FB2A49842CA09F4700A68664 /* Assets.xcassets */,
+				FB2A497D2CA09F4600A68664 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		FB2A497D2CA09F4600A68664 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB2A497E2CA09F4600A68664 /* Main.html */,
+				FB2A49802CA09F4600A68664 /* Icon.png */,
+				FB2A49812CA09F4600A68664 /* Style.css */,
+				FB2A49822CA09F4600A68664 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FB2A49852CA09F4700A68664 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				FB2A49D92CA09F4700A68664 /* Resources */,
+				FB2A49862CA09F4700A68664 /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		FB2A498C2CA09F4700A68664 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB2A498B2CA09F4700A68664 /* Edunao filter.app */,
+				FB2A499D2CA09F4700A68664 /* Edunao filter.app */,
+				FB2A49AA2CA09F4700A68664 /* Edunao filter Extension.appex */,
+				FB2A49B42CA09F4700A68664 /* Edunao filter Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB2A498D2CA09F4700A68664 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				FB2A498E2CA09F4700A68664 /* AppDelegate.swift */,
+				FB2A49902CA09F4700A68664 /* SceneDelegate.swift */,
+				FB2A49922CA09F4700A68664 /* LaunchScreen.storyboard */,
+				FB2A49952CA09F4700A68664 /* Main.storyboard */,
+				FB2A49982CA09F4700A68664 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		FB2A499E2CA09F4700A68664 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				FB2A499F2CA09F4700A68664 /* AppDelegate.swift */,
+				FB2A49A12CA09F4700A68664 /* Main.storyboard */,
+				FB2A49A42CA09F4700A68664 /* Info.plist */,
+				FB2A49A52CA09F4700A68664 /* Edunao filter.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		FB2A49AE2CA09F4700A68664 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				FB2A49AF2CA09F4700A68664 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		FB2A49B82CA09F4700A68664 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				FB2A49B92CA09F4700A68664 /* Info.plist */,
+				FB2A49BA2CA09F4700A68664 /* Edunao filter.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		FB2A49D92CA09F4700A68664 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB2A49DA2CA09F4700A68664 /* popup.js */,
+				FB2A49DB2CA09F4700A68664 /* LICENSE */,
+				FB2A49DC2CA09F4700A68664 /* background.js */,
+				FB2A49DD2CA09F4700A68664 /* images */,
+				FB2A49DE2CA09F4700A68664 /* popup.html */,
+				FB2A49DF2CA09F4700A68664 /* ical.min.js */,
+				FB2A49E02CA09F4700A68664 /* manifest.json */,
+				FB2A49E12CA09F4700A68664 /* popup.css */,
+				FB2A49E22CA09F4700A68664 /* _locales */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB2A498A2CA09F4700A68664 /* Edunao filter (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB2A49CF2CA09F4700A68664 /* Build configuration list for PBXNativeTarget "Edunao filter (iOS)" */;
+			buildPhases = (
+				FB2A49872CA09F4700A68664 /* Sources */,
+				FB2A49882CA09F4700A68664 /* Frameworks */,
+				FB2A49892CA09F4700A68664 /* Resources */,
+				FB2A49CE2CA09F4700A68664 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB2A49AD2CA09F4700A68664 /* PBXTargetDependency */,
+			);
+			name = "Edunao filter (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Edunao filter (iOS)";
+			productReference = FB2A498B2CA09F4700A68664 /* Edunao filter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB2A499C2CA09F4700A68664 /* Edunao filter (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB2A49D62CA09F4700A68664 /* Build configuration list for PBXNativeTarget "Edunao filter (macOS)" */;
+			buildPhases = (
+				FB2A49992CA09F4700A68664 /* Sources */,
+				FB2A499A2CA09F4700A68664 /* Frameworks */,
+				FB2A499B2CA09F4700A68664 /* Resources */,
+				FB2A49D52CA09F4700A68664 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB2A49B72CA09F4700A68664 /* PBXTargetDependency */,
+			);
+			name = "Edunao filter (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Edunao filter (macOS)";
+			productReference = FB2A499D2CA09F4700A68664 /* Edunao filter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB2A49A92CA09F4700A68664 /* Edunao filter Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB2A49CB2CA09F4700A68664 /* Build configuration list for PBXNativeTarget "Edunao filter Extension (iOS)" */;
+			buildPhases = (
+				FB2A49A62CA09F4700A68664 /* Sources */,
+				FB2A49A72CA09F4700A68664 /* Frameworks */,
+				FB2A49A82CA09F4700A68664 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Edunao filter Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Edunao filter Extension (iOS)";
+			productReference = FB2A49AA2CA09F4700A68664 /* Edunao filter Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FB2A49B32CA09F4700A68664 /* Edunao filter Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB2A49D22CA09F4700A68664 /* Build configuration list for PBXNativeTarget "Edunao filter Extension (macOS)" */;
+			buildPhases = (
+				FB2A49B02CA09F4700A68664 /* Sources */,
+				FB2A49B12CA09F4700A68664 /* Frameworks */,
+				FB2A49B22CA09F4700A68664 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Edunao filter Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Edunao filter Extension (macOS)";
+			productReference = FB2A49B42CA09F4700A68664 /* Edunao filter Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB2A49782CA09F4600A68664 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					FB2A498A2CA09F4700A68664 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					FB2A499C2CA09F4700A68664 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					FB2A49A92CA09F4700A68664 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					FB2A49B32CA09F4700A68664 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = FB2A497B2CA09F4600A68664 /* Build configuration list for PBXProject "Edunao filter" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB2A49772CA09F4600A68664;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FB2A498C2CA09F4700A68664 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB2A498A2CA09F4700A68664 /* Edunao filter (iOS) */,
+				FB2A499C2CA09F4700A68664 /* Edunao filter (macOS) */,
+				FB2A49A92CA09F4700A68664 /* Edunao filter Extension (iOS) */,
+				FB2A49B32CA09F4700A68664 /* Edunao filter Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB2A49892CA09F4700A68664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB2A49BD2CA09F4700A68664 /* Icon.png in Resources */,
+				FB2A49942CA09F4700A68664 /* LaunchScreen.storyboard in Resources */,
+				FB2A49BB2CA09F4700A68664 /* Main.html in Resources */,
+				FB2A49C12CA09F4700A68664 /* Script.js in Resources */,
+				FB2A49C52CA09F4700A68664 /* Assets.xcassets in Resources */,
+				FB2A49972CA09F4700A68664 /* Main.storyboard in Resources */,
+				FB2A49BF2CA09F4700A68664 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB2A499B2CA09F4700A68664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB2A49BE2CA09F4700A68664 /* Icon.png in Resources */,
+				FB2A49C02CA09F4700A68664 /* Style.css in Resources */,
+				FB2A49A32CA09F4700A68664 /* Main.storyboard in Resources */,
+				FB2A49C22CA09F4700A68664 /* Script.js in Resources */,
+				FB2A49C62CA09F4700A68664 /* Assets.xcassets in Resources */,
+				FB2A49BC2CA09F4700A68664 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB2A49A82CA09F4700A68664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB2A49F42CA09F4700A68664 /* _locales in Resources */,
+				FB2A49EF2CA09F4700A68664 /* images in Resources */,
+				FB2A49F22CA09F4700A68664 /* manifest.json in Resources */,
+				FB2A49F12CA09F4700A68664 /* ical.min.js in Resources */,
+				FB2A49F02CA09F4700A68664 /* popup.html in Resources */,
+				FB2A49F32CA09F4700A68664 /* popup.css in Resources */,
+				FB2A49ED2CA09F4700A68664 /* LICENSE in Resources */,
+				FB2A49EE2CA09F4700A68664 /* background.js in Resources */,
+				FB2A49EC2CA09F4700A68664 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB2A49B22CA09F4700A68664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB2A49EB2CA09F4700A68664 /* _locales in Resources */,
+				FB2A49E62CA09F4700A68664 /* images in Resources */,
+				FB2A49E92CA09F4700A68664 /* manifest.json in Resources */,
+				FB2A49E82CA09F4700A68664 /* ical.min.js in Resources */,
+				FB2A49E72CA09F4700A68664 /* popup.html in Resources */,
+				FB2A49EA2CA09F4700A68664 /* popup.css in Resources */,
+				FB2A49E42CA09F4700A68664 /* LICENSE in Resources */,
+				FB2A49E52CA09F4700A68664 /* background.js in Resources */,
+				FB2A49E32CA09F4700A68664 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB2A49872CA09F4700A68664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB2A49C32CA09F4700A68664 /* ViewController.swift in Sources */,
+				FB2A498F2CA09F4700A68664 /* AppDelegate.swift in Sources */,
+				FB2A49912CA09F4700A68664 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB2A49992CA09F4700A68664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB2A49C42CA09F4700A68664 /* ViewController.swift in Sources */,
+				FB2A49A02CA09F4700A68664 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB2A49A62CA09F4700A68664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB2A49C72CA09F4700A68664 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB2A49B02CA09F4700A68664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB2A49C82CA09F4700A68664 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB2A49AD2CA09F4700A68664 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = FB2A49A92CA09F4700A68664 /* Edunao filter Extension (iOS) */;
+			targetProxy = FB2A49AC2CA09F4700A68664 /* PBXContainerItemProxy */;
+		};
+		FB2A49B72CA09F4700A68664 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB2A49B32CA09F4700A68664 /* Edunao filter Extension (macOS) */;
+			targetProxy = FB2A49B62CA09F4700A68664 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB2A497E2CA09F4600A68664 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB2A497F2CA09F4600A68664 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		FB2A49922CA09F4700A68664 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB2A49932CA09F4700A68664 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FB2A49952CA09F4700A68664 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB2A49962CA09F4700A68664 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB2A49A12CA09F4700A68664 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB2A49A22CA09F4700A68664 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB2A49C92CA09F4700A68664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB2A49CA2CA09F4700A68664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		FB2A49CC2CA09F4700A68664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Edunao filter Extension (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C533Y5KXTF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Edunao filter Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Edunao-filter.Extension";
+				PRODUCT_NAME = "Edunao filter Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB2A49CD2CA09F4700A68664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Edunao filter Extension (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C533Y5KXTF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Edunao filter Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Edunao-filter.Extension";
+				PRODUCT_NAME = "Edunao filter Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB2A49D02CA09F4700A68664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Edunao filter (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C533Y5KXTF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Edunao filter";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Edunao-filter";
+				PRODUCT_NAME = "Edunao filter";
+				REGISTER_APP_GROUPS = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB2A49D12CA09F4700A68664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Edunao filter (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C533Y5KXTF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Edunao filter";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Edunao-filter";
+				PRODUCT_NAME = "Edunao filter";
+				REGISTER_APP_GROUPS = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB2A49D32CA09F4700A68664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Edunao filter.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = C533Y5KXTF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Edunao filter Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Edunao-filter.Extension";
+				PRODUCT_NAME = "Edunao filter Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FB2A49D42CA09F4700A68664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Edunao filter.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = C533Y5KXTF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Edunao filter Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Edunao-filter.Extension";
+				PRODUCT_NAME = "Edunao filter Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FB2A49D72CA09F4700A68664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Edunao filter.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = C533Y5KXTF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Edunao filter";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Edunao-filter";
+				PRODUCT_NAME = "Edunao filter";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FB2A49D82CA09F4700A68664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Edunao filter.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = C533Y5KXTF;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Edunao filter";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourCompany.Edunao-filter";
+				PRODUCT_NAME = "Edunao filter";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB2A497B2CA09F4600A68664 /* Build configuration list for PBXProject "Edunao filter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB2A49C92CA09F4700A68664 /* Debug */,
+				FB2A49CA2CA09F4700A68664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB2A49CB2CA09F4700A68664 /* Build configuration list for PBXNativeTarget "Edunao filter Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB2A49CC2CA09F4700A68664 /* Debug */,
+				FB2A49CD2CA09F4700A68664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB2A49CF2CA09F4700A68664 /* Build configuration list for PBXNativeTarget "Edunao filter (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB2A49D02CA09F4700A68664 /* Debug */,
+				FB2A49D12CA09F4700A68664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB2A49D22CA09F4700A68664 /* Build configuration list for PBXNativeTarget "Edunao filter Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB2A49D32CA09F4700A68664 /* Debug */,
+				FB2A49D42CA09F4700A68664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB2A49D62CA09F4700A68664 /* Build configuration list for PBXNativeTarget "Edunao filter (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB2A49D72CA09F4700A68664 /* Debug */,
+				FB2A49D82CA09F4700A68664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB2A49782CA09F4600A68664 /* Project object */;
+}
