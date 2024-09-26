@@ -33,7 +33,11 @@ function getOngoingEvent() { // Function to get the ongoing event
       });
   
       if (ongoingEvent) {
-        resolve(ongoingEvent.summary.split(' -')[0].trim().toLowerCase()); // Take the first part of the event name (used for identification in the html) and convert it to lowercase
+        let result = ongoingEvent.summary.split(' -')[0].trim().toLowerCase();
+        if (result === 'classical mechanics') {
+          resolve('introduction to classical mechanics');
+        };
+        resolve(result); // Take the first part of the event name (used for identification in the html) and convert it to lowercase
         return;
       } else {
         console.log('No ongoing event at the moment.');
