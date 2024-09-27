@@ -3,7 +3,7 @@
     "message": "Edunao-Filter"
   },
   "appDesc": {
-    "message": "Ordnen Sie Kurse basierend auf der aktuellen Reihenfolge neu an."
+    "message": "Ordnen Sie die Kurse basierend auf der aktuellen Reihenfolge neu an."
   },
   "popupICALURL": {
     "message": "ICAL-URL"
@@ -24,7 +24,7 @@
     "message": "Warum einen iCal hinzufügen?"
   },
   "icalexplain2": {
-    "message": "Durch Hinzufügen Ihrer iCal-Kalender-URL kann die Erweiterung Ihren aktuellen Kurs basierend auf Ihrem Zeitplan anzeigen!"
+    "message": "Durch das Hinzufügen Ihrer iCal-Kalender-URL kann die Erweiterung Ihren aktuellen Kurs basierend auf Ihrem Zeitplan anzeigen!"
   },
   "popupICALURLPLACEHOLDER": {
     "message": "Geben Sie hier die iCal-URL ein"

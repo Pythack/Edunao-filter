@@ -6,7 +6,7 @@ if (typeof browser === "undefined") {
 }
 
 const keys = ['linear algebra', 'electromagnetism and conduction', 'introduction to automation and control', 'structure of corporation']; // 2A courses
-const alternativeKeys = ['analysis 1', 'introduction to classical mechanics', 'introduction to programming', 'general chemistry', 'philosophy, ethics and critical thinking']; // 1A courses
+const alternativeKeys = ['analysis 1', 'classical mechanics', 'introduction to programming', 'general chemistry', 'philosophy, ethics and critical thinking']; // 1A courses
 
 function onError(error) { // Define onError function
     console.log(`Error:${error}`);
@@ -34,9 +34,6 @@ function getOngoingEvent() { // Function to get the ongoing event
   
       if (ongoingEvent) {
         let result = ongoingEvent.summary.split(' -')[0].trim().toLowerCase();
-        if (result === 'classical mechanics') {
-          resolve('introduction to classical mechanics');
-        };
         resolve(result); // Take the first part of the event name (used for identification in the html) and convert it to lowercase
         return;
       } else {
