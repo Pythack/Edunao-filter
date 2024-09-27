@@ -3,7 +3,7 @@
       "message": "Filtro Edunao"
     },
     "appDesc": {
-      "message": "Reordenar los cursos según la secuencia actual."
+      "message": "Reordenar las clases según la secuencia actual."
     },
     "popupICALURL": {
       "message": "URL ICAL"
@@ -12,7 +12,7 @@
       "message": "Guardar URL"
     },
     "popupSaveSuccess": {
-      "message": "Guardado exitosamente"
+      "message": "Guardado con éxito"
     },
     "popupFetchError": {
       "message": "Error al obtener la URL"
@@ -24,7 +24,7 @@
       "message": "¿Por qué agregar un iCal?"
     },
     "icalexplain2": {
-      "message": "Al agregar la URL de su calendario iCal, la extensión puede mostrar su curso actual según su horario."
+      "message": "Al agregar la URL de su calendario iCal, la extensión puede mostrar su clase actual según su horario."
     },
     "popupICALURLPLACEHOLDER": {
       "message": "Ingrese la URL de iCal aquí"
