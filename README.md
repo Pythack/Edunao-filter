@@ -70,3 +70,6 @@ Ce projet est sous licence MIT - voir le fichier [LICENSE](./LICENSE) pour plus 
 
 *Filtre Edunao est une extension communautaire et open-source destinée à améliorer l'utilisation des plateformes Edunao et CentraleSupélec. Elle est maintenue par des bénévoles et est ouverte à toutes les contributions.*
 
+## Todo
+- [ ] Ajouter un lien vers tuto pour trouver l'iCal
+- [ ] Ajouter un bouton "Rate this extension"
