@@ -72,6 +72,7 @@ Ce projet est sous licence MIT - voir le fichier [LICENSE](./LICENSE) pour plus 
 
 ## Todo
 - [x] Etendre aux 1A
+- [ ] Etendre au cursus ingénieur
 - [x] Faire une interface plus accueillante
 - [ ] Ajouter un lien vers tuto pour trouver l'iCal
 - [ ] Ajouter un bouton "Rate this extension"
