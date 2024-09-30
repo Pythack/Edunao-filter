@@ -110,3 +110,5 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => { // When a tab i
     }, onError);
   }
 });
+
+browser.runtime.setUninstallURL("https://forms.gle/soeTKjxfNEfQpqfB7");
