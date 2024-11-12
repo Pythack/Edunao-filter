@@ -14,6 +14,9 @@
   "popupSaveSuccess": {
     "message": "Enregistré avec succès"
   },
+  "popupSaveLoad": {
+    "message": "Chargement..."
+  },
   "popupFetchError": {
     "message": "Erreur de récupération de l'URL"
   },

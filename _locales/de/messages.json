@@ -14,6 +14,9 @@
   "popupSaveSuccess": {
     "message": "Erfolgreich gespeichert"
   },
+  "popupSaveLoad": {
+    "message": "Abrufen..."
+  },
   "popupFetchError": {
     "message": "Fehler beim Abrufen der URL"
   },

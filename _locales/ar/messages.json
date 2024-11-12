@@ -14,6 +14,9 @@
     "popupSaveSuccess": {
       "message": "تم الحفظ بنجاح"
     },
+    "popupSaveLoad": {
+      "message": "جارٍ الجلب..."
+    },
     "popupFetchError": {
       "message": "حدث خطأ أثناء جلب عنوان URL"
     },

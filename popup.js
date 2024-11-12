@@ -23,7 +23,11 @@ function saveSuccess() {
 		});
 		window.close();
 	}, 700);
-	
+}
+
+function saveLoad() {
+	document.querySelector("#save_btn").style.backgroundColor = "#0060df";
+	document.querySelector("#save_btn").textContent = browser.i18n.getMessage("popupSaveLoad");
 }
 
 function saveError(message) {
@@ -87,7 +91,8 @@ function saveOptions(e) { // Function called when user clicks on "Save" button
 	browser.storage.local.set({ ICALURL: url }, function() {
 		console.log('URL has been saved to local storage.');
 	});
-	fetchAndSaveICal("https://corsproxy.io/?" + url); // Fetch and save the iCal file using a proxy to avoid CORS issues
+	saveLoad();
+	fetchAndSaveICal("https://ical.bdbcs.fr/edunaoproxy/" + url); // Fetch and save the iCal file using a proxy to avoid CORS issues
 };
 
 function localizeHtmlPage() // This is used to translate the popup.html page
