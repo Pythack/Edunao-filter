@@ -5,8 +5,10 @@ if (typeof browser === "undefined") {
   var browser_action = browser.browserAction
 }
 
-const keys = ['linear algebra', 'electromagnetism and conduction', 'introduction to automation and control', 'structure of corporation']; // 2A courses
-const alternativeKeys = ['analysis 1', 'classical mechanics', 'introduction to programming', 'general chemistry', 'philosophy, ethics and critical thinking']; // 1A courses
+// const secondYears = ['linear algebra', 'electromagnetism and conduction', 'introduction to automation and control', 'structure of corporation']; // 2A courses
+// const firstYears = ['analysis 1', 'classical mechanics', 'introduction to programming', 'general chemistry', 'philosophy, ethics and critical thinking']; // 1A courses
+const secondYears = ['robotics bootcamp', 'topology and functional analysis', 'electromagnetism and waves', 'thermochemistry']; // 2A courses
+const firstYears = ['coding weeks', 'analysis 2', 'electric circuits', 'chemistry of solutions', 'cell biology', 'philosophy, ethics and critical thinking']; // 1A courses
 
 function onError(error) { // Define onError function
     console.log(`Error:${error}`);
@@ -51,8 +53,8 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => { // When a tab i
     getOngoingEvent().then(ongoingEventName => { // Get the ongoing event (empty string if none)
       browser.scripting.executeScript({ // Inject the following script into the tab
         target: { tabId: tabId },
-        args: [ongoingEventName, keys, alternativeKeys],
-        function: (ongoingEvent, keys, alternativeKeys) => {
+        args: [ongoingEventName, secondYears, firstYears],
+        function: (ongoingEvent, secondYears, firstYears) => {
           const parentElement = document.querySelector(".courses"); // Get the courses' list's container
           if (parentElement.classList.contains("reordered")) { // Listener is triggered about 3 times when the page is loaded, so we need to check if the elements have already been reordered
             return;
@@ -79,7 +81,7 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => { // When a tab i
           }
           
           if (!jsonDict.hasOwnProperty('linear algebra')) { // If linear algebra is not in the list so the use is 1A then put the 1A courses on top
-            alternativeKeys.forEach((key) => {
+            firstYears.forEach((key) => {
               if (jsonDict.hasOwnProperty(key)) {
                 jsonDict[key].firstChild.style.boxShadow = '0 0 20px #910035';
                 parentElement.appendChild(jsonDict[key]);
@@ -87,7 +89,7 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => { // When a tab i
               }
             });
           } else {
-            keys.forEach((key) => {
+            secondYears.forEach((key) => {
               if (jsonDict.hasOwnProperty(key)) { // If the key exists in jsonDict
                 jsonDict[key].firstChild.style.boxShadow = '0 0 20px #910035'; // Add a red shadow to the element
                 parentElement.appendChild(jsonDict[key]); // Append the corresponding element to parentElement
