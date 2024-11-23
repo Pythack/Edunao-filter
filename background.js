@@ -7,8 +7,8 @@ if (typeof browser === "undefined") {
 
 // const secondYears = ['linear algebra', 'electromagnetism and conduction', 'introduction to automation and control', 'structure of corporation']; // 2A courses
 // const firstYears = ['analysis 1', 'classical mechanics', 'introduction to programming', 'general chemistry', 'philosophy, ethics and critical thinking']; // 1A courses
-const secondYears = ['robotics bootcamp', 'topology and functional analysis', 'electromagnetism and waves', 'thermochemistry']; // 2A courses
-const firstYears = ['coding weeks', 'analysis 2', 'electric circuits', 'chemistry of solutions', 'cell biology', 'philosophy, ethics and critical thinking']; // 1A courses
+const secondYears = ['topology and functional analysis', 'electromagnetism and waves','advanced programming', 'introduction to bioengineering' ,'structure of corporation']; // 2A courses
+const firstYears = ['analysis 2', 'electric circuits', 'chemistry of solutions', 'cell biology', 'philosophy, ethics and critical thinking']; // 1A courses
 
 function onError(error) { // Define onError function
     console.log(`Error:${error}`);
