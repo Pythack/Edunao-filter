@@ -7,7 +7,9 @@ Voici la liste des versions actuellement prises en charge avec les correctifs de
 | Version | Supportée          |
 | ------- | ------------------ |
 | 1.0.5   | :white_check_mark:  |
-| < 1.0.5   | :x:                |
+| 1.0.4   | :x:                |
+| 1.0.3   | :white_check_mark:  |
+| < 1.0.3   | :x:                |
 
 ## Signaler une vulnérabilité
 
