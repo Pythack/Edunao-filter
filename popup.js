@@ -122,6 +122,11 @@ function restoreOptions() {
 	  if (result.ICALURL) { // If there are custom settings
 		document.querySelector("#add_url").value = result.ICALURL; // Set the value of the input field
 	  }
+	  if (result.calendarLast) {
+		const lastRefreshedDate = new Date(result.calendarLast);
+		const formattedDate = `${lastRefreshedDate.getDate()}/${lastRefreshedDate.getMonth() + 1}/${lastRefreshedDate.getFullYear()} ${lastRefreshedDate.getHours()}:${lastRefreshedDate.getMinutes()}`;
+		document.querySelector("#lastRefreshedTimestamp").textContent = formattedDate;
+	  }
 	}, onError);
   };
   

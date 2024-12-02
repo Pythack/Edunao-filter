@@ -29,6 +29,9 @@
   "icalexplain2": {
     "message": "Durch das Hinzufügen Ihrer iCal-Kalender-URL kann die Erweiterung Ihren aktuellen Kurs basierend auf Ihrem Zeitplan anzeigen!"
   },
+  "lastRefreshed" : {
+    "message": "Zuletzt aktualisiert"
+  },
   "popupICALURLPLACEHOLDER": {
     "message": "Geben Sie hier die iCal-URL ein"
   }

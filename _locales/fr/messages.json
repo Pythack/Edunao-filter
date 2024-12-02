@@ -29,6 +29,9 @@
   "icalexplain2": {
     "message": "En ajoutant l'URL de votre calendrier iCal, l'extension peut vous afficher le cours actuel en fonction de votre emploi du temps !"
   },
+  "lastRefreshed" : {
+    "message": "Dernière mise à jour"
+  },
   "popupICALURLPLACEHOLDER": {
     "message": "Entrez l'URL iCal ici"
   }

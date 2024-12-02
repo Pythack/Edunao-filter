@@ -29,6 +29,9 @@
   "icalexplain2": {
     "message": "By adding your iCal calendar URL, the extension can display your current course based on your schedule!"
   },
+  "lastRefreshed" : {
+    "message": "Last refreshed"
+  },
   "popupICALURLPLACEHOLDER": {
     "message": "Enter iCal URL here"
   }
