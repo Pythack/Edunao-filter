@@ -70,7 +70,8 @@ async function fetchAndSaveICal(url) {
 	  });
   
 	  // Save the optimized event data to local storage
-	  browser.storage.local.set({ calendarEvents: eventsData }, function() {
+      let currentTimestamp = new Date().toISOString();
+	  browser.storage.local.set({ calendarEvents: eventsData, calendarLast: currentTimestamp }, function() {
 		console.log('Events have been saved to local storage.');
 		saveSuccess();
 	  });
