@@ -211,7 +211,7 @@ function updateValues() {
 intialize();
 
 setTimeout(updateValues, 0);
-setInterval(updateValues, 10000);
+setInterval(updateValues, 600000);
 
 setTimeout(() => {
   browser.tabs.onUpdated.addListener(applyFilter); // Add the listener to the tabs
