@@ -1,0 +1,38 @@
+{
+  "appName": {
+    "message": "Edunao filter"
+  },
+  "appDesc": {
+    "message": "Reorder courses based on the current sequence."
+  },
+  "popupICALURL": {
+    "message": "ICAL URL"
+  },
+  "popupSave": {
+    "message": "Save URL"
+  },
+  "popupSaveSuccess": {
+    "message": "Successfully saved"
+  },
+  "popupSaveLoad": {
+    "message": "Fetching..."
+  },
+  "popupFetchError": {
+    "message": "Error fetching URL"
+  },
+  "popupInvalidURL": {
+    "message": "Invalid URL"
+  },
+  "icalexplain1": {
+    "message": "Why add an iCal?"
+  },
+  "icalexplain2": {
+    "message": "By adding your iCal calendar URL, the extension can display your current course based on your schedule!"
+  },
+  "lastRefreshed" : {
+    "message": "Last refreshed"
+  },
+  "popupICALURLPLACEHOLDER": {
+    "message": "Enter iCal URL here"
+  }
+}
