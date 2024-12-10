@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_appName__",
+  "author": "Pythack & Chrldb",
+  "default_locale": "en",
+  "version": "1.0.6",
+  "description": "__MSG_appDesc__",
+  "background": {
+    "scripts": ["./background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "https://centralesupelec.edunao.com/"
+  ],
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon.png"
+  },
+  "browser_action": {
+    "default_icon": "./images/icon.png",
+    "default_title": "__MSG_appName__",
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    "images/icon.png",
+    "images/icon-48.png",
+    "images/icon-16.png"
+  ]
+}
