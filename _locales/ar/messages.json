@@ -32,6 +32,9 @@
   "lastRefreshed" : {
     "message": "آخر تحديث"
   },
+  "popupNever" : {
+    "message": "أبدًا"
+  },
   "popupICALURLPLACEHOLDER": {
     "message": "أدخل عنوان URL لـ iCal هنا"
   }

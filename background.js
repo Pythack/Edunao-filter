@@ -128,10 +128,21 @@ function applyFilter(tabId, changeInfo, tab) { // When a tab is updated
             });
             
             parentElement.classList.add("reordered"); // Add the reordered class to the parentElement so that we know it has been reordered (this is added at the end so that if an error occurs the code will retry upon next listener trigger)
+            
+
           }
         });
       });
     }, onError);
+  } else if (taburl.host == "centralesupelec.edunao.com" && taburl.pathname == "/course/view.php") {
+    browser.scripting.executeScript({ // Inject the following script into the tab
+      target: { tabId: tabId },
+      function: () => {
+        document.querySelectorAll('.aalink').forEach(link => {
+          link.target = "_blank";
+        });
+      }
+    });
   }
 };
 

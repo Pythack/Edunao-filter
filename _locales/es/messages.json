@@ -32,6 +32,9 @@
   "lastRefreshed" : {
     "message": "Última actualización"
   },
+  "popupNever" : {
+    "message": "Nunca"
+  },
   "popupICALURLPLACEHOLDER": {
     "message": "Ingrese la URL de iCal aquí"
   }

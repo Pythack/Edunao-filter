@@ -127,6 +127,8 @@ function restoreOptions() {
 		const lastRefreshedDate = new Date(result.calendarLast);
 		const formattedDate = `${lastRefreshedDate.getDate()}/${lastRefreshedDate.getMonth() + 1}/${lastRefreshedDate.getFullYear()} ${lastRefreshedDate.getHours()}:${lastRefreshedDate.getMinutes()}`;
 		document.querySelector("#lastRefreshedTimestamp").textContent = formattedDate;
+	  } else {
+		document.querySelector("#lastRefreshedTimestamp").textContent = browser.i18n.getMessage("popupNever");
 	  }
 	}, onError);
   };
