@@ -10,7 +10,7 @@ if (typeof browser === "undefined") {
 function intialize() {
   browser.storage.local.get('settings', function(result) {
     if (!result.settings) {
-      browser.storage.local.set({ settings: {"courses":{"firstYears":[],"secondYears":[]},"differentiator":"","colours":{"ongoing":"","focus":""}} }, function() {
+      browser.storage.local.set({ settings: {"courses":{"firstYears":[],"secondYears":[]},"differentiator":"","colours":{"ongoing":"","focus":""}, "openinnewtab": true} }, function() {
         console.log('Temporary settings have been saved to local storage.');
       });
     }
@@ -135,11 +135,15 @@ function applyFilter(tabId, changeInfo, tab) { // When a tab is updated
       });
     }, onError);
   } else if (taburl.host == "centralesupelec.edunao.com" && taburl.pathname == "/course/view.php") {
-    browser.scripting.executeScript({ // Inject the following script into the tab
-      target: { tabId: tabId },
-      function: () => {
-        document.querySelectorAll('.aalink').forEach(link => {
-          link.target = "_blank";
+    browser.storage.local.get('settings', function(settings) {
+      if (settings.settings.openinnewtab) {
+        browser.scripting.executeScript({ // Inject the following script into the tab
+          target: { tabId: tabId },
+          function: () => {
+            document.querySelectorAll('.aalink').forEach(link => {
+              link.target = "_blank";
+            });
+          }
         });
       }
     });

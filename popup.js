@@ -123,8 +123,8 @@ function restoreOptions() {
 	  if (result.ICALURL) { // If there are custom settings
 		document.querySelector("#add_url").value = result.ICALURL; // Set the value of the input field
 	  }
-	  if (result.calendarLast) {
-		const lastRefreshedDate = new Date(result.calendarLast);
+	  if (result.settingsLast) {
+		const lastRefreshedDate = new Date(result.settingsLast);
 		const formattedDate = `${lastRefreshedDate.getDate()}/${lastRefreshedDate.getMonth() + 1}/${lastRefreshedDate.getFullYear()} ${lastRefreshedDate.getHours()}:${lastRefreshedDate.getMinutes()}`;
 		document.querySelector("#lastRefreshedTimestamp").textContent = formattedDate;
 	  } else {
