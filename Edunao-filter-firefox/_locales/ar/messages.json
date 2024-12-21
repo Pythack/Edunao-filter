@@ -1,0 +1,38 @@
+{
+  "appName": {
+    "message": "مرشح إيدوناو"
+  },
+  "appDesc": {
+    "message": "إعادة ترتيب الدورات بناءً على التسلسل الحالي."
+  },
+  "popupICALURL": {
+    "message": "عنوان URL لـ ICAL"
+  },
+  "popupSave": {
+    "message": "حفظ URL"
+  },
+  "popupSaveSuccess": {
+    "message": "تم الحفظ بنجاح"
+  },
+  "popupSaveLoad": {
+    "message": "جارٍ الجلب..."
+  },
+  "popupFetchError": {
+    "message": "حدث خطأ أثناء جلب عنوان URL"
+  },
+  "popupInvalidURL": {
+    "message": "عنوان URL غير صالح"
+  },
+  "icalexplain1": {
+    "message": "لماذا إضافة iCal؟"
+  },
+  "icalexplain2": {
+    "message": "من خلال إضافة عنوان URL لتقويم iCal الخاص بك، يمكن للملحق عرض الدورة التدريبية الحالية الخاصة بك بناءً على جدولك الزمني!"
+  },
+  "lastRefreshed" : {
+    "message": "آخر تحديث"
+  },
+  "popupICALURLPLACEHOLDER": {
+    "message": "أدخل عنوان URL لـ iCal هنا"
+  }
+}

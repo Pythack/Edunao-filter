@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./popup.css">
+    <script src="ical.min.js"></script>
+  </head>
+  <body>
+    <h1 id="title">__MSG_appName__</h1>
+    <div id="formdiv">
+      <div id="formdivurl" class="formdivel">
+        <label for="add_url">__MSG_popupICALURL__: </label><br/>
+        <input type="text" placeholder="__MSG_popupICALURLPLACEHOLDER__" id="add_url">
+      </div>
+      <div id="formdivprv" class="formdivel">
+        <button type="submit" id="save_btn">__MSG_popupSave__</button>
+      </div>
+    </div>
+
+    <!-- Explication de l'iCal -->
+    <div id="icalExplanation">
+      <h3>__MSG_icalexplain1__</h3>
+      <p>__MSG_icalexplain2__</p>
+    </div>
+
+    <div id="lastRefreshed">
+      <p>__MSG_lastRefreshed__: <span id="lastRefreshedTimestamp"></span></p>
+    </div>
+
+    <script type="text/javascript" src="./popup.js"></script>
+  </body>
+</html>
