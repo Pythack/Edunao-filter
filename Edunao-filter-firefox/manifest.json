@@ -9,12 +9,6 @@
     "scripts": ["background.js"]
   },
   "permissions": ["storage", "tabs", "*://centralesupelec.edunao.com/*"],
-  "content_scripts": [
-    {
-      "matches": ["*://centralesupelec.edunao.com/*"],
-      "js": ["content-script.js"]
-    }
-  ],
   "icons": {
     "16": "images/icon-16.png",
     "48": "images/icon-48.png",
